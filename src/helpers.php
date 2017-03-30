@@ -30,8 +30,8 @@ if (!function_exists('currency_format')) {
      *
      * @return string
      */
-    function currency_format($amount = null, $currency = null)
+    function currency_format($amount = null, $currency = null, $symbol = true)
     {
-        return app('currency')->format($amount, $currency);
+        return app('currency')->format($amount, $currency, $symbol);
     }
 }

@@ -91,7 +91,7 @@ class Currency
 
         // Should the result be formatted?
         if ($format === true) {
-            return $this->format($value, $to);
+            return $this->format($value, $to, true);
         }
 
         // Return value
@@ -106,7 +106,7 @@ class Currency
      *
      * @return string
      */
-    public function format($value, $code = null)
+    public function format($value, $code = null, $symbol = true)
     {
         // Get default currency if one is not set
         $code = $code ?: $this->config('default');
@@ -148,6 +148,11 @@ class Currency
 
         // Format the value
         $value = number_format($value, $decimals, $decimal, $thousand);
+        
+        // Should the result include the currency symbol?
+        if (!$symbol) {
+            return $negative . $value;
+        }
 
         // Apply the formatted measurement
         $value = preg_replace($valRegex, $value, $format);
