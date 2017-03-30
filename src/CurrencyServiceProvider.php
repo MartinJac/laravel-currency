@@ -1,6 +1,6 @@
 <?php
 
-namespace Torann\Currency;
+namespace MartinJac\Currency;
 
 use Illuminate\Support\ServiceProvider;
 

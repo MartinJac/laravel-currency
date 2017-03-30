@@ -1,6 +1,6 @@
 <?php
 
-namespace Torann\Currency;
+namespace MartinJac\Currency;
 
 use Illuminate\Support\Arr;
 use Illuminate\Contracts\Cache\Factory as FactoryContract;
@@ -232,7 +232,7 @@ class Currency
                 $this->currencies_cache = $this->getDriver()->all();
             }
             else {
-                $this->currencies_cache = $this->cache->rememberForever('torann.currency', function () {
+                $this->currencies_cache = $this->cache->rememberForever('martinjac.currency', function () {
                     return $this->getDriver()->all();
                 });
             }
@@ -256,7 +256,7 @@ class Currency
     /**
      * Get storage driver.
      *
-     * @return \Torann\Currency\Contracts\DriverInterface
+     * @return \MartinJac\Currency\Contracts\DriverInterface
      */
     public function getDriver()
     {
@@ -277,7 +277,7 @@ class Currency
     /**
      * Get formatter driver.
      *
-     * @return \Torann\Currency\Contracts\FormatterInterface
+     * @return \MartinJac\Currency\Contracts\FormatterInterface
      */
     public function getFormatter()
     {
@@ -300,7 +300,7 @@ class Currency
      */
     public function clearCache()
     {
-        $this->cache->forget('torann.currency');
+        $this->cache->forget('martinjac.currency');
     }
 
     /**

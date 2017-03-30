@@ -67,13 +67,13 @@ return [
     'drivers' => [
 
         'database' => [
-            'class' => \Torann\Currency\Drivers\Database::class,
+            'class' => \MartinJac\Currency\Drivers\Database::class,
             'connection' => null,
             'table' => 'currencies',
         ],
 
         'filesystem' => [
-            'class' => \Torann\Currency\Drivers\Filesystem::class,
+            'class' => \MartinJac\Currency\Drivers\Filesystem::class,
             'disk' => null,
             'path' => 'currencies.json',
         ],
@@ -109,7 +109,7 @@ return [
     'formatters' => [
 
         'php_intl' => [
-            'class' => \Torann\Currency\Formatters\PHPIntl::class,
+            'class' => \MartinJac\Currency\Formatters\PHPIntl::class,
         ],
 
     ],

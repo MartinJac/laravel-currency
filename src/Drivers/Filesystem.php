@@ -1,6 +1,6 @@
 <?php
 
-namespace Torann\Currency\Drivers;
+namespace MartinJac\Currency\Drivers;
 
 use DateTime;
 use Exception;

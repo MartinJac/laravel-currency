@@ -1,9 +1,9 @@
 <?php
 
-namespace Torann\Currency\Formatters;
+namespace MartinJac\Currency\Formatters;
 
 use NumberFormatter;
-use Torann\Currency\Contracts\FormatterInterface;
+use MartinJac\Currency\Contracts\FormatterInterface;
 
 class PHPIntl implements FormatterInterface
 {

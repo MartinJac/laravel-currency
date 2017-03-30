@@ -1,6 +1,6 @@
 <?php
 
-namespace Torann\Currency\Facades;
+namespace MartinJac\Currency\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

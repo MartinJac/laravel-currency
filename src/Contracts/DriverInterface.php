@@ -1,6 +1,6 @@
 <?php
 
-namespace Torann\Currency\Contracts;
+namespace MartinJac\Currency\Contracts;
 
 use DateTime;
 

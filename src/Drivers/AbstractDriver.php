@@ -1,9 +1,9 @@
 <?php
 
-namespace Torann\Currency\Drivers;
+namespace MartinJac\Currency\Drivers;
 
 use Illuminate\Support\Arr;
-use Torann\Currency\Contracts\DriverInterface;
+use MartinJac\Currency\Contracts\DriverInterface;
 
 abstract class AbstractDriver implements DriverInterface
 {
